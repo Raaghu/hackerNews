@@ -1,0 +1,41 @@
+body {
+  font-family: 'sans-serif';
+}
+
+.news-article {
+    border-bottom: solid 1px #bdbdbd;
+    margin-top: 2em;
+    font-family: sans-serif;
+    background-color: #f5f5f5;
+    padding: 1em;
+}
+
+.news-article h2 {
+    margin-top: 0;
+}
+
+.news-article h2 > a {
+    text-decoration: none;
+    color: #324589;
+    font-family: sans-serif;
+}
+
+.news-article .details {
+
+}
+
+.news-article .details .left{
+    position: relative;
+    display: inline-block;
+    width: 50%;
+}
+
+.news-article .details .right{
+    position: relative;
+    display: inline-block;
+    width: 50%;
+}
+
+.news-article .details h4, .news-article .details h5{
+    margin:0;
+}

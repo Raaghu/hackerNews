@@ -1,0 +1,10 @@
+<button ng-click="loadNews()" ng-if="news.length == 0">Start</button>
+<button ng-click="email('simple')" ng-if="news.length">Email Simple</button>
+<button ng-click="email('sendgrid')" ng-if="news.length">Email SendGrid</button>
+<button ng-click="email('attachment')" ng-if="news.length">Email SendGrid</button>
+<a href="#/page2" >Email From Blank Page</button>
+<div>
+    <div ng-repeat="newsArticle in news">
+        <news-item ng-if="newsArticle.url" data="newsArticle"></news-item>
+    </div>
+</div>

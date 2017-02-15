@@ -1,0 +1,6 @@
+<button ng-click="generateAndEmail('attachment')" >Send Email</button>
+<div ng-show="ShowContent">
+    <div ng-repeat="newsArticle in news">
+        <news-item ng-if="newsArticle.url" data="newsArticle"></news-item>
+    </div>
+</div>

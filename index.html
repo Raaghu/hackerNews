@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en" ng-app="news" data-framework="angularjs">
+	<head>
+		<meta charset="utf-8">
+		<title>AngularJS • Hacker News</title>
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <!-- endbuild -->
+		<style>[ng-cloak] { display: none; }</style>
+	</head>
+	<body ng-controller="newsCtrl">
+    	<section id="news-container" ng-view>
+            <a href="#/page1"> On Page Email</a>
+        </section>
+		<footer id="info">
+			Project Assignment from Raghavendra K R
+		</footer>
+    <!-- build:js js/vendor.js -->
+        <script src="node_modules/angular/angular.js"></script>
+		<script src="node_modules/angular-route/angular-route.js"></script>
+    <!-- endbuild -->
+    <!-- build:js js/scripts.js -->
+		<script src="js/app.js"></script>
+		<script src="js/controllers/newsCtrl.js"></script>
+		<script src="js/directives/newsItem.js"></script>
+    <!-- endbuild -->
+	</body>
+</html>
